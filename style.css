@@ -1,0 +1,111 @@
+:root {
+	/* Colors */
+	--clr-lime: #d8db2f;
+	--clr-red: #d73328;
+
+	--clr-slate-900: #133041;
+	--clr-slate-700: #4e6e7e;
+	--clr-slate-500: #6b94a8;
+	--clr-slate-300: #9abed5;
+	--clr-slate-100: #e4f4fd;
+
+	--clr-white: #ffffff;
+
+	/* Typography */
+	--ff-primary: 'Plus Jakarta Sans', sans-serif;
+
+	--fw-bold: 700;
+	--fw-normal: 500;
+
+	--fs-bigger: 56px;
+	--fs-big: 24px;
+	--fs-normal: 18px;
+	--fs-small: 16px;
+	--fs-smaller: 14px;
+
+	--lh-normal: 125%;
+	--lh-small: 150%;
+
+	--ls-normal: -1px;
+	--ls-small: 0px;
+}
+
+/* CSS RESET */
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+	margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		interpolate-size: allow-keywords;
+	}
+}
+
+body {
+	/* 4. Add accessible line-height */
+	line-height: 1.5;
+	/* 5. Improve text rendering */
+	-webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+	text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+	isolation: isolate;
+}
+
+/* general styling */
