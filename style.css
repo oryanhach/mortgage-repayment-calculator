@@ -109,3 +109,182 @@ h6 {
 }
 
 /* general styling */
+
+body {
+	font-family: var(--ff-primary);
+}
+
+.calculator {
+	background-color: var(--clr-white);
+}
+
+.calculator__header {
+	padding: 1.5rem 1.35rem;
+}
+
+.header__title {
+	color: var(--clr-slate-900);
+	margin-bottom: 0.5rem;
+}
+
+.header__btn {
+	color: var(--clr-slate-700);
+	border-bottom: 1px solid var(--clr-slate-700);
+	width: 3.85rem;
+}
+
+.form__container {
+	padding: 0rem 1.35rem 2rem;
+}
+
+.form-control {
+	position: relative;
+}
+
+label {
+	color: var(--clr-slate-700);
+	display: block;
+	margin-bottom: 0.65rem;
+}
+
+input {
+	border: none;
+	outline: 1px solid var(--clr-slate-700);
+	border-radius: 6px;
+	height: 2.5rem;
+	width: 100%;
+	margin-bottom: 1.4rem;
+}
+
+.form-control small {
+	visibility: hidden;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.mortgage__amount-symbol {
+	position: absolute;
+	top: 2.1rem;
+	background-color: var(--clr-slate-100);
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	width: 2.6rem;
+	height: 2.5rem;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--clr-slate-700);
+}
+
+#mortgage__amount {
+	padding-left: 3.3rem;
+}
+
+.mortgage__term-symbol {
+	position: absolute;
+	top: 2.15rem;
+	right: 0;
+	background-color: var(--clr-slate-100);
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	width: 4.3rem;
+	height: 2.5rem;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--clr-slate-700);
+	font-weight: var(--fw-bold);
+}
+
+#mortgage__term {
+	padding-left: 1rem;
+}
+
+.interest__rate-symbol {
+	position: absolute;
+	top: 2.15rem;
+	right: 0;
+	background-color: var(--clr-slate-100);
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	width: 3rem;
+	height: 2.5rem;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--clr-slate-700);
+	font-weight: var(--fw-bold);
+}
+
+#interest__rate {
+	padding-left: 1rem;
+}
+
+.type__title {
+	color: var(--clr-slate-700);
+	margin-bottom: 0.65rem;
+}
+
+.radio__btn-container {
+	position: relative;
+	margin-bottom: 1.5rem;
+}
+
+.radio__btn {
+	outline: none;
+	position: absolute;
+	height: 1.3rem;
+	top: 2.95rem;
+	left: -8.5rem;
+}
+
+.radio__btn:nth-of-type(2) {
+	top: 6.5rem;
+}
+
+.radio__btn-label {
+	border: 1px solid var(--clr-slate-700);
+	padding: 0.6rem 0 0.6rem 3.4rem;
+	border-radius: 6px;
+	font-weight: var(--fw-bold);
+	color: var(--clr-slate-900);
+}
+
+.btn__submit {
+	width: 100%;
+	border-radius: 2rem;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.7rem;
+	background-color: var(--clr-lime);
+	padding: 0.85rem 0;
+	font-weight: var(--fw-bold);
+	color: var(--clr-slate-900);
+}
+
+.results__container {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--clr-slate-900);
+	gap: 0.8rem;
+	padding: 1.75rem;
+}
+
+.results__title {
+	color: var(--clr-white);
+	font-weight: var(--fw-bold);
+	font-size: var(--fs-big);
+}
+
+.results__description {
+	color: var(--clr-slate-300);
+}

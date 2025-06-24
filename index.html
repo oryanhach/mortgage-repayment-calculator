@@ -44,8 +44,10 @@
 
           <div class="form-control">
             <label for="mortgage__amount">Mortgage Amount</label>
-            <input id="mortgage__amount" type="number">
-            <!-- reminder - create the euro sign using before:: -->
+            <input id="mortgage__amount" type="text">
+            <p class="mortgage__amount-symbol">
+              <i class="fa-solid fa-sterling-sign"></i>
+            </p>
             <small>Error message</small>
           </div>
 
@@ -53,26 +55,30 @@
             <div class="form-control">
               <label for="mortgage__term">Mortgage Term</label>
               <input id="mortgage__term" type="text">
-              <!-- reminder - create the years sign using after:: -->
+              <p class="mortgage__term-symbol">
+                years
+              </p>
               <small>Error message</small>
             </div>
 
             <div class="form-control">
               <label for="interest__rate">Interest Rate</label>
               <input id="interest__rate" type="text">
-              <!-- reminder - create the % sign using after:: -->
+              <p class="interest__rate-symbol">
+                %
+              </p>
               <small>Error message</small>
             </div>
           </div>
 
-          <div class="form-control">
+          <div class="form-control radio__btn-container">
             <legend class="type__title">
               Mortgage Type
             </legend>
             <input type="radio" class="radio__btn" id="repayment" name="mortgage__type">
-            <label for="repayment">Repayment</label>
+            <label class="radio__btn-label" for="repayment">Repayment</label>
             <input type="radio" class="radio__btn" id="interest__only" name="mortgage__type">
-            <label for="interest__only">Interest Only</label>
+            <label class="radio__btn-label" for="interest__only">Interest Only</label>
           </div>
 
           <button class="btn__submit" type="submit">
