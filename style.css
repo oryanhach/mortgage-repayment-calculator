@@ -288,3 +288,60 @@ input {
 .results__description {
 	color: var(--clr-slate-300);
 }
+
+@media (min-width: 770px) {
+	main {
+		padding: 2.5rem;
+		background-color: var(--clr-slate-100);
+	}
+
+	.calculator {
+		border-radius: 1.5rem;
+		overflow: hidden;
+	}
+
+	.calculator__header {
+		padding: 1.8rem 2.2rem;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.header__title {
+		font-size: var(--fs-big);
+	}
+
+	.header__btn {
+		align-self: baseline;
+		transform: translateY(0.4rem);
+	}
+
+	.form__container {
+		padding: 0rem 2.3rem 2rem;
+	}
+
+	.mortgage__amount-symbol {
+		position: absolute;
+		top: 2.15rem;
+	}
+
+	.form__secondary__container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.form__secondary__container input {
+		width: 300px;
+	}
+
+	.radio__btn {
+		left: -17.5rem;
+	}
+
+	.radio__btn:nth-of-type(2) {
+		top: 6.45rem;
+	}
+
+	.btn__submit {
+		width: 50%;
+	}
+}
