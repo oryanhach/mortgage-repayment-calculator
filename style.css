@@ -133,6 +133,11 @@ body {
 	width: 3.85rem;
 }
 
+.header__btn:hover {
+	cursor: pointer;
+	opacity: 0.65;
+}
+
 .form__container {
 	padding: 0rem 1.35rem 2rem;
 }
@@ -156,6 +161,10 @@ input {
 	margin-bottom: 1.4rem;
 }
 
+input:hover {
+	cursor: pointer;
+}
+
 .form-control small {
 	visibility: hidden;
 	position: absolute;
@@ -176,10 +185,16 @@ input {
 	justify-content: center;
 	align-items: center;
 	color: var(--clr-slate-700);
+	cursor: pointer;
+	transition: background-color 0.25s ease-in-out;
 }
 
 #mortgage__amount {
 	padding-left: 3.3rem;
+}
+
+#mortgage__amount:focus ~ .mortgage__amount-symbol {
+	background-color: var(--clr-lime);
 }
 
 .mortgage__term-symbol {
@@ -197,10 +212,16 @@ input {
 	align-items: center;
 	color: var(--clr-slate-700);
 	font-weight: var(--fw-bold);
+	cursor: pointer;
+	transition: background-color 0.25s ease-in-out;
 }
 
 #mortgage__term {
 	padding-left: 1rem;
+}
+
+#mortgage__term:focus ~ .mortgage__term-symbol {
+	background-color: var(--clr-lime);
 }
 
 .interest__rate-symbol {
@@ -218,10 +239,16 @@ input {
 	align-items: center;
 	color: var(--clr-slate-700);
 	font-weight: var(--fw-bold);
+	cursor: pointer;
+	transition: background-color 0.25s ease-in-out;
 }
 
 #interest__rate {
 	padding-left: 1rem;
+}
+
+#interest__rate:focus ~ .interest__rate-symbol {
+	background-color: var(--clr-lime);
 }
 
 .type__title {
@@ -246,12 +273,27 @@ input {
 	top: 6.5rem;
 }
 
+.radio__btn {
+	accent-color: var(--clr-lime);
+}
+
 .radio__btn-label {
 	border: 1px solid var(--clr-slate-700);
 	padding: 0.6rem 0 0.6rem 3.4rem;
 	border-radius: 6px;
 	font-weight: var(--fw-bold);
 	color: var(--clr-slate-900);
+}
+
+.radio__btn:hover + .radio__btn-label {
+	background-color: transparent;
+	border: 1px solid var(--clr-lime);
+	cursor: pointer;
+}
+
+.radio__btn:checked + .radio__btn-label {
+	border: 1px solid var(--clr-lime);
+	background-color: #f9fae0;
 }
 
 .btn__submit {
@@ -266,6 +308,15 @@ input {
 	padding: 0.85rem 0;
 	font-weight: var(--fw-bold);
 	color: var(--clr-slate-900);
+}
+
+.btn__submit:hover {
+	cursor: pointer;
+	opacity: 0.75;
+}
+
+.btn__submit:focus {
+	opacity: 0.65;
 }
 
 .results__container {
