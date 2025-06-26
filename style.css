@@ -172,6 +172,29 @@ input:hover {
 	left: 0;
 }
 
+/* ERROR INPUTS */
+
+.form-control.error input {
+	outline-color: var(--clr-red);
+}
+
+.form-control.error .mortgage__amount-symbol,
+.form-control.error .mortgage__term-symbol,
+.form-control.error .interest__rate-symbol {
+	background-color: var(--clr-red);
+	color: var(--clr-white);
+}
+
+.form-control.error small {
+	color: var(--clr-red);
+	visibility: visible;
+	font-weight: 600;
+}
+
+.radio__btn-small {
+	transform: translateY(1.3rem);
+}
+
 .mortgage__amount-symbol {
 	position: absolute;
 	top: 2.1rem;
@@ -191,6 +214,11 @@ input:hover {
 
 #mortgage__amount {
 	padding-left: 3.3rem;
+	transition: ouline-color 0.25s ease-in-out;
+}
+
+#mortgage__amount:focus {
+	outline-color: var(--clr-lime);
 }
 
 #mortgage__amount:focus ~ .mortgage__amount-symbol {
@@ -218,6 +246,11 @@ input:hover {
 
 #mortgage__term {
 	padding-left: 1rem;
+	transition: ouline-color 0.25s ease-in-out;
+}
+
+#mortgage__term:focus {
+	outline-color: var(--clr-lime);
 }
 
 #mortgage__term:focus ~ .mortgage__term-symbol {
@@ -245,6 +278,11 @@ input:hover {
 
 #interest__rate {
 	padding-left: 1rem;
+	transition: ouline-color 0.25s ease-in-out;
+}
+
+#interest__rate:focus {
+	outline-color: var(--clr-lime);
 }
 
 #interest__rate:focus ~ .interest__rate-symbol {
